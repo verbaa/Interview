@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page3.bundle.css">
+    <link rel="stylesheet" href="css/page3Desktop.bundle.css">
+    <link rel="next" href="page6.html" />
+    <link rel="prev" href="page4.html" />
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__logo">
+        <img  class="header__logo-img" src="img/pb.png" alt="logo">
+    </div>
+    <div class="header__language">
+        <div class="header__language-ukr">УКР</div>
+        <div class="header__language-strip"></div>
+        <div class="header__language-rus">РУС</div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="one">
+            <p class="main__step">Шаг 1 из 3</p>
+            <h1 class="main__title">Настройки
+                подключения</h1>
+
+            <p class="main__allow">Для проведения видеозаписи нам необходимо получить доступ:</p>
+
+            <div class="camera">
+                <img src="img/camera.png" alt="camera" class="camera__img">
+                <p  class="camera__info"><strong>доступ к камере</strong></p>
+            </div>
+
+            <div class="micro">
+                <img src="img/micro.png" alt="camera" class="camera__img">
+                <p  class="camera__info"><strong>доступ к микрофону</strong></p>
+            </div>
+
+            <p class="main__access">Для корректной работы
+                системы, пожалуйста, нажмите “Разрешить” в открывшемся диалоговом окне. В случае, если
+                у вас более одной камеры или микрофона, выберите те, которые необходимы в выпадающем списке.</p>
+
+
+        </div>
+        <div class="two">
+
+            <div id="container">
+                <div class="camera_record" id="camera_record"><p>готово к записи</p></div>
+                <div class="camera_recordNow"><p>идет запись</p></div>
+                <button id="play" class="play" disabled> <img src="img/camera-copy-5.png"></button>
+                <div id="camera_recordPause" class="camera_recordPause"><p>пауза</p></div>
+                <video id="recorded" autoplay loop></video>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <button id="record" onclick="startTimer(90, document.querySelector('#mins'))">Записать видео</button>
+    <button id="pause" class="button2">Поставить на паузу</button>
+    <form action="page4.html">
+        <button type="submit" id="nextPage">Продолжить</button>
+    </form>
+
+    <!-- <img src="img/invalid-name.png" alt="" class="button__circle"> -->
+</main>
+
+<script async src="js/bundle.js"></script>
+
+</body>
