@@ -1,0 +1,23 @@
+@media screen and (min-width: 769px) and (max-width: 2400px) {
+  .header__logo {
+    margin-left: 15vw;
+  }
+  .header__language {
+    margin-right: 15vw;
+  }
+  .container__text {
+    width: 35vw;
+    font-size: 17px;
+  }
+  .input {
+    width: 35vw;
+  }
+  .container {
+    padding-top: 10vh;
+    margin: 0 15vw 0 15vw;
+  }
+  .container__title {
+    font-size: 56px;
+    font-weight: bold;
+  }
+}

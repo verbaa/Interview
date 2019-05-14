@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 54px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-img {
+  max-width: 100%;
+  height: 27px;
+  object-fit: contain;
+  display: inline-flex;
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.header__language {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__language-ukr {
+  margin-left: 12px;
+  width: 26px;
+  height: 18px;
+  font-size: 13px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: OpenSans-Regular;
+}
+
+.header__language-strip {
+  height: 24px;
+  width: 1px;
+  background-color: #424242;
+  margin-left: 12px;
+}
+
+.header__language-rus {
+  margin: 0 12px;
+  width: 25px;
+  height: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: OpenSans;
+}
+
+.main__img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.input__number {
+  padding-left: 4vw;
+}
+
+.container__title {
+  display: flex;
+  width: 100%;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #424242;
+  font-family: OpenSans;
+}
+
+.container__text {
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "NotoSans";
+}
+
+.container {
+  margin: 0 7.1222vw 0 7.1222vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__number {
+  margin-top: 20px;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #dde2e6;
+}
+
+.input {
+  position: relative;
+}
+
+.input__number::-webkit-input-placeholder {
+  font-size: 17px;
+  text-indent: 20px;
+}
+
+.input__number:-moz-placeholder {
+  font-size: 17px;
+  text-indent: 20px;
+}
+
+.input__number::-moz-placeholder {
+  font-size: 17px;
+  text-indent: 20px;
+}
+
+.input__number:-ms-input-placeholder {
+  font-size: 17px;
+  text-indent: 20px;
+}
+
+.input__icon {
+  position: absolute;
+  right: 20px;
+  top: 43px;
+}
+
+.container__smsSent {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #232332;
+  font-family: "NotoSans";
+}
+
+.container__smsAccepted {
+  width: 246px;
+  height: 34px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #232332;
+  font-family: "NotoSans";
+}
+
+.call {
+  align-items: center;
+  display: none;
+  margin-left: 18px;
+}
+
+.call__icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.call__callMe {
+  width: 105px;
+  height: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #75af26;
+  text-decoration: none;
+  margin-left: 4.844vw;
+}
+
+.callTwo {
+  display: none;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+  margin-left: 7vw;
+}
+
+.call__iconTwo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  z-index: 100;
+}
+
+.call__callMeTwo {
+  width: 101px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #424242;
+  margin-left: 10vw;
+}
+
+.phone {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes phone {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.pulse:hover i {
+  transition: .5s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+  animation: phone .9s ease-in-out infinite;
+}
+
+.phone i {
+  transition: .5s ease-in-out;
+}
+
+.pulse::before {
+  content: '';
+  position: absolute;
+  border: 15px solid #dde2e6;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 1.8s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.pulse::after {
+  animation-delay: .5s;
+  border-radius: 50%;
+  animation: pulse 1.8s linear infinite;
+  opacity: 0;
+}
+
+.pulse, .phone {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.bloc {
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pulse:hover {
+  background: #f3f3f3;
+}
+
+.pulse {
+  position: relative;
+  color: #fff;
+  background: #fff;
+  transition: .5s;
+}
+
+.phone img {
+  height: 18px;
+}
