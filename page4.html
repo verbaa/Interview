@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page4.css">
+    <link rel="stylesheet" href="css/page4Desktop.css">
+    <link rel="next" href="page5.html" />
+    <link rel="prev" href="page3.html" />
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__logo">
+        <img  class="header__logo-img" src="img/pb.png" alt="logo">
+    </div>
+    <div class="header__language">
+        <div class="header__language-ukr">УКР</div>
+        <div class="header__language-strip"></div>
+        <div class="header__language-rus">РУС</div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="one">
+            <p class="main__step">Шаг 2 из 3</p>
+            <h1 class="main__title">Для успешной
+                записи интервью:</h1>
+
+            <p class="main__info">Вам необходимо будет ответить на несколько вопросов, касающихся Вашего опыта работы. <strong> Интервью займет у Вас не более 15 минут.</strong>
+
+                Сначала Вы будете видеть вопрос. На этом этапе никакой видеозаписи не ведется. У Вас есть возможность подготовиться к ответу. Когда Вы будете готовы отвечать, нажимайте кнопку «Записать видео»
+
+                Включится запись Вашего ответа. Обратите внимание на таймер.
+                Ответ на каждый вопрос ограничен
+                по времени! Поэтому отвечайте четко
+                на поставленный вопрос. Вопрос все время будет перед Вами, вверху страницы. Вы можете остановить запись или закончить запись досрочно. Некоторые вопросы могут содержать несколько небольших
+                уточняющих вопросов-подсказок. Пожалуйста, следуйте им и отвечайте на все вопросы для полного развернутого ответа. Записав ответ
+                на вопрос, у Вас будет возможность:</p>
+
+
+
+            <ul class="main__list">
+                <li>просмотреть свой ответ</li>
+                <li>1 раз его перезаписать</li>
+            </ul>
+        </div>
+        <div class="two">
+
+            <div id="container">
+                <div class="camera_record" id="camera_record"><p>готово к записи</p></div>
+                <div class="camera_recordNow"><p>идет запись</p></div>
+                <button id="play" class="play" disabled> <img src="img/camera-copy-5.png"></button>
+                <div id="camera_recordPause" class="camera_recordPause"><p>пауза</p></div>
+                <video id="recorded" autoplay loop></video>
+                <div class="button">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <button id="record" onclick="startTimer(90, document.querySelector('#mins'))">Записать видео</button>
+    <button id="pause" class="button2">Поставить на паузу</button>
+    <form action="page5.html">
+        <button type="submit" id="nextPage">Продолжить</button>
+    </form>
+
+    <!-- <img src="img/invalid-name.png" alt="" class="button__circle"> -->
+</main>
+
+<script async src="js/index.js"></script>
+
+</body>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page6.css">
+    <link rel="stylesheet" href="css/page6Desktop.css">
+    <link rel="next" href="page7.html" />
+    <link rel="prev" href="page5.html" />
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__logo">
+        <img  class="header__logo-img" src="img/pb.png" alt="logo">
+    </div>
+    <div class="header__language">
+        <div class="header__language-ukr">УКР</div>
+        <div class="header__language-strip"></div>
+        <div class="header__language-rus">РУС</div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="one">
+
+            <h1 class="main__title">Вопросы 1 из 5</h1>
+
+            <div class="question">
+                <h3 class="question__title">Давайте познакомимся!
+                    Расскажите о себе</h3>
+                <ol class="">
+                    <li>На какой специальности Вы учились?</li>
+                    <li>Почему выбрали такую специальность?</li>
+                    <li>Какой опыт работы имеете?</li>
+                    <li>С чем был связана смена мест работы/должностей?</li>
+                    <li>Какие вакансии сейчас рассматриваете?</li>
+                </ol>
+
+            </div>
+
+            <div class="remember">
+                <p class="remember__title">помните!</p>
+                <p class="remember__text">Вам необходимо ответить на все вопросы. От полноты и качестват ответов зависит результат интервью.</p>
+
+            </div>
+        </div>
+        <div class="two">
+
+            <div id="container">
+                <div class="main__timer"><span>Остаток времени </span><span id= "mins"></span></div>
+
+                <div class="camera_record" id="camera_record"><p>готово к записи</p></div>
+                <div class="camera_recordNow"><p>идет запись</p></div>
+                <button id="play" class="play" disabled> <img src="img/camera-copy-5.png"></button>
+                <div id="camera_recordPause" class="camera_recordPause"><p>пауза</p></div>
+                <video id="recorded" autoplay loop></video>
+                <div class="button">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <button id="record" onclick="startTimer(90, document.querySelector('#mins'))">Записать видео</button>
+    <button id="pause" class="button2">Поставить на паузу</button>
+    <form action="page7.html">
+    <button type="submit" id="nextPage">Следующий вопрос</button>
+    </form>
+
+    <!-- <img src="img/invalid-name.png" alt="" class="button__circle"> -->
+</main>
+
+<script async src="js/index.js"></script>
+
+</body>
+
