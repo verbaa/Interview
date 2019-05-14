@@ -1,0 +1,90 @@
+
+@media screen and (min-width: 769px) {
+
+  .header__logo {
+    margin-left: 15vw;
+  }
+  .header__language {
+    margin-right: 15vw;
+  }
+  .main__title{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .container{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .main__allow{
+    font-size: 17px;
+  }
+  .main__access{
+    font-size: 17px;
+    width: 40vw;
+  }
+  .main__info{
+    font-size: 17px;
+
+  }
+  .containerTwo{
+    flex-direction: row;
+  }
+  .camera{
+    width: 30vw;
+  }
+  .button{
+    width: 30vw;
+  }
+  .two{
+    margin-left: 10vw;
+  }
+  .main__info{
+    width: 30vw;
+  }
+  .remember{
+    width: 30vw;
+  }
+  .remember__text{
+    width: auto;
+    margin: 0;
+  }
+  .containerTwo{
+    display: flex;
+    flex-direction: row;
+  }
+  button{
+    width: 30vw;
+
+  }
+  .two{
+    margin-left: 10vw;
+  }
+  @media (min-width: 1440px) {
+    video{
+      height: 330px;
+    }
+    .play{
+      height: 330px;
+      width: 440px;
+    }
+
+
+  }
+
+
+  #record{
+    margin: 5rem 0 0 15vw;
+  }
+  #pause{
+    margin: 2rem 0 0 15vw;;
+  }
+  #nextPage{
+    margin: 2rem 0 0 15vw;;
+  }
+  .container {
+    margin: 0 15vw 0 15vw;
+  }
+
+}

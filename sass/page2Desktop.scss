@@ -1,0 +1,27 @@
+@media screen and (min-width: 769px) and (max-width: 2400px) {
+
+  .header__logo {
+    margin-left: 15vw;
+  }
+  .header__language {
+    margin-right: 15vw;
+  }
+  .container__title{
+    font-size: 56px;
+    font-weight: bold;
+  }
+  .container__text{
+    font-size: 17px;
+    width: 35vw;
+  }
+  .container{
+    padding-top: 10vh;
+    margin: 0 15vw 0 15vw;
+  }
+  .input{
+     width: 35vw;
+   }
+  .container__smsSent{
+    width: 35vw;
+  }
+}
