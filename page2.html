@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page2.css" >
+    <link rel="stylesheet" href="css/page2Desktop.css">
+    <link rel="next" href="page3.html" />
+    <link rel="prev" href="index.html" />
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="header__logo">
+            <img  class="header__logo-img" src="img/pb.png" alt="logo">
+        </div>
+        <div class="header__language">
+            <div class="header__language-ukr">УКР</div>
+            <div class="header__language-strip"></div>
+            <div class="header__language-rus">РУС</div>
+        </div>
+
+
+    </header>
+<div class="main" id="main">
+
+    <picture class="main__img">
+        <source class="main__img" srcset="img/depositphotos-xl.jpg" media="(min-width: 1024px) ">
+        <source class="main__img" srcset="img/group-2@2x.png" media="(min-width: 450px) and (max-width: 1024px)">
+
+        <source srcset="img/group-2.png">
+        <img  class="main__img" srcset="img/group-2.png" alt="My default image" src="photo">
+    </picture>
+
+    <div class="container">
+
+        <h1 class="container__title">Оффлайн
+            интервью</h1>
+
+        <p class="container__text">Добро пожаловать в систему дистанционной оценки кандидатов на работу в ПриватБанк.
+            Пожалуйста, введите номер телефона, который Вы указали
+            в резюме.</p>
+
+        <div class="input">
+            <input class="input__number" type="number" placeholder="Введите ОТП-пароль"/>
+            <a href="page3.html"> <img class="input__icon" src="img/next-copy.png" alt=""></a>
+
+        </div>
+
+        <p class="container__smsSent">На номер +38(063) 111-22-33 был отправлен SMS
+            пароль. Сообщение может прийти в Приват24,
+            Sender или в виде SMS сообщения.</p>
+
+
+
+        <div id="block" class="container__smsAccepted">Через  <span id="time">01:30</span>  Вы сможете подтвердить вход
+            при помощи звонка.</div>
+
+        <div class="call" id="call">
+            <img class="call__icon" src="img/phoneicon.png" alt="call">
+            <p class="call__callMe">Позвоните мне</p>
+        </div>
+
+        <div id="callTwo" class="callTwo">
+                <div class="pulse">
+                    <div class="phone"><img src="img/phoneicon.png" alt="phone"></div>
+
+                </div>
+            <div class="call__callMeTwo">Вас вызывает
+                +3809100011924</div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+<script src="js/timer.js"></script>
+
+</body>
+</html>
